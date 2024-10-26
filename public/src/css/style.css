@@ -1,0 +1,225 @@
+
+@media (max-width: 850px) {
+    .responsive-header {
+        display: block !important;
+    }
+
+    .responsive-none {
+        display: none !important;
+    }
+}
+
+@font-face {
+    font-family: "shabanm";
+    src: url("../font/Shabnam-Thin-FD-WOL.woff2") format(woff2);
+}
+
+body {
+    font-family: "shabanm";
+    font-weight: bold !important;
+    margin: 0 !important;
+    background-color: #e7f6fd !important;
+}
+
+p ,h1 ,h2 ,h3 ,h4 ,h5 ,h6 ,a {
+    user-select: none;
+}
+
+.toggle {
+    display: flex !important;
+    justify-content: space-between;
+    flex-flow: column wrap !important;
+    height: 1.7rem !important;
+    width: 2rem !important;
+    cursor: pointer;
+}
+
+.toggle .bar {
+    height: 5px !important;
+    background-color: black !important;
+    border-radius: 5px !important;
+    transform-origin: left !important;
+    transition: all 0.5s;
+}
+
+.toggle:hover .bar-top {
+    transform: rotate(45deg);
+}
+
+.toggle:hover .bar-center {
+    opacity: 0;
+}
+
+.toggle:hover .bar-buttom {
+    transform: rotate(-45deg);
+}
+
+.img:hover {
+    transform: scale(1.1) !important;
+    transition: all 0.5s;
+}
+
+.hello:after , .hello-en::after {
+    content: "";
+    font-size: 25px !important;
+    color: black !important;
+    animation-name: animatingtext;
+    animation-duration: 12000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animatingtext {
+    0% { content: "س"; }
+    5% { content: "سل"; }
+    10% { content: "سلا"; }
+    15% { content: "سلام"; }
+    20% { content: "سلام خ"; }
+    25% { content: "سلام خو"; }
+    30% { content: "سلام خوش"; }
+    35% { content: "سلام خوش آ"; }
+    40% { content: "سلام خوش آم"; }
+    45% { content: "سلام خوش آمد"; }
+    50% { content: "سلام خوش آمدی"; }
+    55% { content: "سلام خوش آمدید"; }
+    60% { content: "سلام خوش آمدید ب"; }
+    65% { content: "سلام خوش آمدید به"; }
+    70% { content: "سلام خوش آمدید به س"; }
+    75% { content: "سلام خوش آمدید به سای"; }
+    80% { content: "سلام خوش آمدید به سایت"; }
+    85% { content: "سلام خوش آمدید به سایت م"; }
+    90% { content: "سلام خوش آمدید به سایت من"; }
+    95% { content: " سلام خوش آمدید به سایت من ."; }
+    100% { content: " سلام خوش آمدید به سایت من .."; }
+}
+
+.hello-en::after {
+    animation-name: animatingtext-en !important;
+    font-size: 28px !important;
+}
+
+@keyframes animatingtext-en {
+    0% { content: "H"; }
+    5% { content: "He"; }
+    10% { content: "Hel"; }
+    15% { content: "Hell"; }
+    20% { content: "Hello"; }
+    25% { content: "Hello W"; }
+    30% { content: "Hello We"; }
+    35% { content: "Hello Wel"; }
+    40% { content: "Hello Welc"; }
+    45% { content: "Hello Welco"; }
+    50% { content: "Hello Welcom"; }
+    55% { content: "Hello Welcome"; }
+    60% { content: "Hello Welcome t"; }
+    65% { content: "Hello Welcome to"; }
+    70% { content: "Hello Welcome to M"; }
+    75% { content: "Hello Welcome to Me"; }
+    80% { content: "Hello Welcome to Mee"; }
+    85% { content: "Hello Welcome to Mee S"; }
+    90% { content: "Hello Welcome to Mee Si"; }
+    95% { content: " Hello Welcome to Mee Sit"; }
+    98% { content: "Hello Welcome to Mee Site"; }
+    100% { content: "Hello Welcome to Mee Site .."; }
+}
+
+@keyframes animate {
+    0% {transform: translateY(-1000%);}
+    100% {}
+}
+
+#hobab {
+    list-style: none;
+    width: 90rem;
+    height: 45.6rem;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: -1000px;
+}
+
+.hhobab {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: aqua;
+    bottom: 0;
+    animation: animate 5s infinite linear;
+}
+
+.orgin {
+    position: absolute;
+    z-index: 1000;
+}
+
+.hh-2 {
+    left: 10%;
+    width: 80px;
+    height: 80px;
+}
+
+.hh-13 {
+    left: 1%;
+    width: 90px;
+    height: 90px;
+}
+
+.hh-3 {
+    left: 20%;
+    width: 90px;
+    height: 90px;
+}
+
+.hh-4 {
+    left: 30%;
+    width: 40px;
+    height: 40px;
+}
+
+.hh-5 {
+    left: 40%;
+    width: 80px;
+    height: 80px;
+}
+
+.hh-6 {
+    left: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.hh-7 {
+    left: 60%;
+    width: 50px;
+    height: 50px;
+}
+
+.hh-8 {
+    left: 70%;
+    width: 120px;
+    height: 120px;
+}
+
+.hh-9 {
+    left: 80%;
+    width: 60px;
+    height: 60px;
+}
+
+.hh-10 {
+    left: 85%;
+    width: 90px;
+    height: 90px;
+}
+
+.hh-11 {
+    left: 92%;
+    width: 80px;
+    height: 80px;
+}
+
+.hh-12 {
+    left: 97%;
+    width: 30px;
+    height: 30px;
+}
